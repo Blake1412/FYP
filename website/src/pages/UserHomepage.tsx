@@ -1,4 +1,4 @@
-import {mdiBallotOutline, mdiAccountCircleOutline, mdiInformationOutline} from "@mdi/js"
+import {mdiBallotOutline, mdiAccountCircleOutline, mdiInformationOutline, mdiCogOutline} from "@mdi/js"
 import Icon from "@mdi/react";
 import Navbar from "../components/Navbar.tsx";
 import {useNavigate} from "react-router-dom";
@@ -11,12 +11,12 @@ const UserHomepage = () => {
             image: mdiBallotOutline,
             text: "Current Elections",
             onClick: () => {
-                navigate("/Elections")
+                navigate("/electionsFalse")
             }
         },
         {image: mdiAccountCircleOutline, text: "My Account", link: "#"},
         {image: mdiInformationOutline, text: "Information", link: "#"},
-        {image: "https://placehold.co/600x200", text: "Box 4", link: "#"},
+        {image: mdiCogOutline, text: "Settings", link: "#"},
     ];
 
     return (
